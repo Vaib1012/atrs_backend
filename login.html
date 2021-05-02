@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hompage</title>
+    <link rel="stylesheet" href="Login.css">
+</head>
+
+
+<body class="main">
+    <div class="topnav">
+        <a class="home" href="#home">
+            <img class="home_inverted" src="img/Edurater2.0.png" alt="home" style="width: 50px;">
+            <img class="home_front" src="img/Edurater2.0_white.png" alt="home" style="width: 50px;">
+        </a>
+        <ul>
+            <a href="#signup" onclick="document.getElementById('id03').style.display='block'">Sign Up</a>
+            <a href="#news">News</a>
+            <a class="active" href="#schoolPage">School Page</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About Us</a>
+            <a href="#search" class="search-button">
+                <input class="seach-box" type="text" name="" placeholder="Search..">
+            </a>
+        </ul>
+    </div>
+
+    <!--   <div class="header">
+
+           <button class="button">Sign up</button>
+       </div>-->
+
+    <img src="img/Edurater2.0.png" alt="logo">
+
+    <div class="Container1">
+        <h1>EduRater</h1>
+        <h2>Rate your professor anonymously</h2>
+        <button class="button1" onclick="document.getElementById('id01').style.display='block'">Login</button>
+        <button class="button1" onclick="document.getElementById('id02').style.display='block'">Guest</button>
+    </div>
+
+    <!--Login pop up-->
+    <div id="id01" class="modal">
+
+        <form class="modal-content animate" action="/action_page.php" method="post">
+
+            <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <button type="submit">Login</button>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            </div>
+        </form>
+    </div>
+
+    <!--Guest Login pop-up-->
+    <div id="id02" class="modal">
+
+        <form class="modal-content animate" action="/action_page.php" method="post">
+
+            <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+                <button type="submit">Submit</button>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+
+            </div>
+        </form>
+    </div>
+
+
+    <!--Signup pop up-->
+    <div id="id03" class="modal">
+
+        <form class="modal-content animate" action="/action_page.php" method="post">
+
+            <div class="container">
+                <label for="name"><b>Name</b></label>
+                <input type="text" placeholder="Enter Name" name="name" required>
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <button type="submit">Sign up</button>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id03').style.display='none'" class="cancelbtn">Cancel</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        // Get the modal
+        var loginModal = document.getElementById('id01');
+        var guestModal = document.getElementById('id02');
+        var signupModal = document.getElementById('id03');
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == loginModal) {
+                loginModal.style.display = "none";
+            }
+
+            if (event.target == guestModal) {
+                guestModal.style.display = "none";
+            }
+
+            if (event.target == signupModal) {
+                signupModal.style.display = "none";
+            }
+
+
+        }
+    </script>
+
+</body>
+</html>

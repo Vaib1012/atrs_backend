@@ -1,0 +1,287 @@
+body {
+    background-image: linear-gradient(to right, #E6C4ED, #C2A9E9, #FBE4F7, #CCACE4);
+}
+
+/***************************START OF TOP NAV**************************************/
+/*Lining up the two logo's on top of each other for hover effect*/
+.home {
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 50px;
+    height: 21px;
+}
+
+.home_front {
+    z-index: 9999;
+}
+
+.home:hover > .home_front {
+    opacity: 0;
+    transition: 200ms linear;
+}
+
+.home img {
+    position: absolute;
+    left: 14px;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 10%;
+    left: 0px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    z-index: 9999;
+}
+
+    .topnav ul {
+        justify-content: center;
+
+      
+    }
+
+    /* Style the links inside the navigation bar */
+    .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        margin-left: 1px;
+        margin-right: 1px;
+        text-decoration: none;
+        font-size: 17px;
+        justify-content: space-between;
+    }
+
+    .topnav.search-box {
+        position: absolute;
+        transform: (-50%,-50%);
+        justify-content: center;
+        font-size: 17px;
+        padding: 14px 16px;
+        border-radius: 20px;
+        background: none;
+        border: #a072eb;
+    }
+
+.search-button:hover {
+    background: none;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #a072eb;
+    color: black;
+    transition: 200ms;
+    border-radius: 20px;
+}
+
+/* Add a color to the active/current link */
+/*.topnav a.active {
+    background-color: #C2A9E9;
+    color: #000;
+    border-radius: 20px;
+}*/
+   /* =====================END of nav
+*/
+
+
+img {
+    height: 300px;
+    width: 700px;
+    display: block;
+    margin:auto;
+    margin-top: 100px;
+}
+
+.Container1 {
+    align-self: center;
+    display: block;
+    border-radius: 15px;
+    width: 600px;
+    height: 800px;
+    margin: auto;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    position:center;
+}
+
+h1 {
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+    font-size: xx-large;
+    font-weight: lighter;
+    text-align: center;
+    bottom: 20px;
+    
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: normal;
+    margin-top: 100px;
+    width: 100%;
+    margin-bottom:80px;
+   
+}
+
+
+
+.button1 {
+    background-color: black;
+    border: none;
+    color: white;
+    text-align: center;
+    position: relative;
+    height: 60px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    width: 300px;
+    font-size: x-large;
+    font-weight: 700;
+    padding:10px 40px;
+    margin-top:30px;
+    font-family: 'times new roman', sans-serif;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+}
+
+
+/*=======LOGIN FORM STYLE========*/
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+    button:hover {
+        opacity: 0.8;
+    }
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 30%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+    .close:hover,
+    .close:focus {
+        color: red;
+        cursor: pointer;
+    }
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+
+    .cancelbtn {
+        width: 100%;
+    }
+}

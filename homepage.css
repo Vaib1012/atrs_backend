@@ -1,0 +1,38 @@
+body {
+    background-image: linear-gradient(to right, #E6C4ED, #C2A9E9, #FBE4F7, #CCACE4);
+  }
+
+h1{
+    text-align: center;
+}
+
+.btn_1{
+    background-color:black;
+    border: none;
+    height: 50px;
+    width: 150px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 50px;
+    right: 60px;
+    font-size: large;
+}
+
+.btn_2{
+    background-color:black;
+    border: none;
+    height: 50px;
+    width: 150px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 50px;
+    right: 250px;
+    font-size: large;
+
+}
