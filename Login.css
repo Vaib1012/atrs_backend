@@ -2,7 +2,7 @@ body {
     background-image: linear-gradient(to right, #E6C4ED, #C2A9E9, #FBE4F7, #CCACE4);
 }
 
-/***************************START OF TOP NAV**************************************/
+/****START OF TOP NAV*******************/
 /*Lining up the two logo's on top of each other for hover effect*/
 .home {
     top: 0;
@@ -285,3 +285,5 @@ span.psw {
         width: 100%;
     }
 }
+
+/*-----------------------=======================*/
